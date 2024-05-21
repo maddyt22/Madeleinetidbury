@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000); // Replace with your actual data loading logic and time
 
     function hideLoader() {
-        const loader = document.getElementById("loader");
+        const loader = document.getElementById("loading");
         loader.style.display = "none";
     }
 
