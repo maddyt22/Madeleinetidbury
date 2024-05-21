@@ -80,6 +80,64 @@ body {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
+/* ---------------------Portfolio Page--------------------- */
+body {
+  background-color: #fee6db;
+  
+}
+#loader {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+#mountains {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+#sky1 {
+  position: absolute;
+  width: 100%;
+  bottom: 50;
+  z-index: 1;
+    transform-origin: center center;
+  transition: 1s cubic-bezier(0,.45,1,.65);
+animation: loading 4s infinite;
+}
+
+#sun {
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+  transform-origin: center bottom;
+}
+
+@keyframes loading {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(0deg);
+  }
+   40%{
+    transform: rotate(180deg);
+  }
+   60%{
+    transform: rotate(180deg);
+  }
+  90%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 header {
     width: 100%;
