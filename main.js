@@ -1,7 +1,17 @@
-  $(window).on('load', function () {
-          $('#loader').hide();
-        }) ;
+document.addEventListener("DOMContentLoaded", () => {
+    // Simulate an API request or any async operation
+    setTimeout(() => {
+        hideLoader();
+        
+    }, 3000); // Replace with your actual data loading logic and time
 
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+    }
+
+ 
+});
 
 window.onscroll = function () {
   scrollRotate();
