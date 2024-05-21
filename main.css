@@ -80,45 +80,66 @@ body {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* ---------------------Portfolio Page--------------------- */
+/* ---------------------Loader--------------------- */
 body {
   background-color: #fee6db;
   
 }
+#loading{
+   position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  z-index: 995;
+}
 #loader {
+  position: absolute;
+  width: 100vw;
+  height: 450px;
+   top: 50%;
+  
+  transform: translateY(-50%);
+}
+#loaderinner {
   position: relative;
+  
   width: 400px;
   height: 400px;
   margin: auto;
-  overflow: hidden;
+
+
 }
-#mountains {
+#loadmountains {
   margin: auto;
   width: 100%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 998;
 }
 
 #sky1 {
   position: absolute;
   width: 100%;
   bottom: 50;
-  z-index: 1;
+  z-index: 997;
     transform-origin: center center;
   transition: 1s cubic-bezier(0,.45,1,.65);
-animation: loading 4s infinite;
+animation: loader 4s infinite;
 }
 
-#sun {
-  width: 30%;
+
+#loadrect {
   position: absolute;
-  z-index: 1;
-  transform-origin: center bottom;
+  bottom: 0; 
+  z-index: 999; 
+  width: 100vw; 
+  height: 208px; 
+  background-color: #fee6db;
 }
-
-@keyframes loading {
+@keyframes loader {
   0%{
     transform: rotate(0deg);
   }
@@ -138,7 +159,7 @@ animation: loading 4s infinite;
     transform: rotate(360deg);
   }
 }
-
+/* ------------------------------------------- */
 header {
     width: 100%;
     height: 130px;
