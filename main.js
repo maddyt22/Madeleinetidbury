@@ -1,4 +1,6 @@
-
+  $(window).on('load', function () {
+          $('#loading').hide();
+        }) ;
 
 
 window.onscroll = function () {
